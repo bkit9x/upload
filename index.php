@@ -26,7 +26,7 @@
             }
             else{
                 // Upload file
-                move_uploaded_file($_FILES['avatar']['tmp_name'], './file/'.$_FILES['avatar']['name']);
+                move_uploaded_file($_FILES['avatar']['tmp_name'], './f/'.$_FILES['avatar']['name']);
 
                 file_put_contents("data",'
 /f/'.$_FILES['avatar']['name'] ,FILE_APPEND);
